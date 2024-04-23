@@ -16,8 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="lofi">
       <body>
-        <Header />
-        {children}
+        <Header>{children}</Header>
         <Footer />
       </body>
     </html>
