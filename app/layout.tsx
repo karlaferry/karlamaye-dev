@@ -4,8 +4,6 @@ import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "karlamaye dev",
 };
@@ -17,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="lofi">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />

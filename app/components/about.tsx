@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="p-6 py-6">
+    <div className="p-6 py-6 opacity-0 animate-fade-in">
       <h1 className="text-4xl py-2">hello there, friend 👋🏼</h1>
       <p className="py-2 text-l leading-8">My name is Karla.</p>
       <p className="py-2 text-l leading-8">

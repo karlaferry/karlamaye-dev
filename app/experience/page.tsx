@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="opacity-0 animate-fade-in">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">

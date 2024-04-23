@@ -38,3 +38,16 @@ footer {
     text-wrap: balance;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 900ms ease-in-out forwards;
+}
