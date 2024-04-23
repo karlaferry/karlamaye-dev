@@ -6,7 +6,7 @@ export default function Avatar() {
   return (
     <div className="p-6">
       <div className="avatar online">
-        <div className="w-48 rounded-full">
+        <div className="w-80 rounded-full">
           <Image src={headshot} alt="" />
         </div>
       </div>
