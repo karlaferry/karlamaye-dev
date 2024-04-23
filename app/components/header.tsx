@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { LiaCodeSolid } from "react-icons/lia";
 
 export default function header({ children }: any) {
   return (
@@ -30,7 +31,9 @@ export default function header({ children }: any) {
                 </svg>
               </label>
             </div>
-            <div className="flex-1 px-2 mx-2 text-xl">karlamaye dev</div>
+            <div className="flex-1 px-2 mx-2 text-xl">
+              {<LiaCodeSolid className="text-4xl pr-2" />} karlamaye dev
+            </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
                 {/* Navbar menu content here */}
