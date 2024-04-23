@@ -2,23 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/app/assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/app/assets/fonts/JetBrainsMono-Bold.ttf') format('truetype');
-}
-* {
-  font-size:large;
-  font-family: 'JetBrains Mono', monospace;
-}
-
 body {
   padding: 1rem;
 }

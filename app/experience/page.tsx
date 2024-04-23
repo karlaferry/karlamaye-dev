@@ -34,7 +34,7 @@ export default function Portfolio() {
     "Firebase",
   ];
   return (
-    <div className="opacity-0 animate-fade-in p-6 py-6">
+    <div className="opacity-0 animate-fade-in p-6 py-6 container mx-auto">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">
@@ -52,8 +52,8 @@ export default function Portfolio() {
             </svg>
           </div>
           <div className="timeline-start md:text-end mb-10">
-            <time className="font-mono italic">Aug 2022 - Present</time>
-            <div className="text-lg font-bold font-mono">
+            <time className="italic">Aug 2022 - Present</time>
+            <div className="text-lg font-bold">
               SaleCycle | Junior Developer
             </div>
             <div className="text-xs pb-2">
@@ -90,10 +90,8 @@ export default function Portfolio() {
             </svg>
           </div>
           <div className="timeline-end mb-10">
-            <time className="font-mono italic">
-              February 2022 – August 2022
-            </time>
-            <div className="text-lg font-bold font-mono">
+            <time className="italic">February 2022 – August 2022</time>
+            <div className="text-lg font-bold">
               Northcoders | Junior Software Engineer & Mentor
             </div>
             <div className="text-xs pb-2">
@@ -134,10 +132,8 @@ export default function Portfolio() {
             </svg>
           </div>
           <div className="timeline-start md:text-end mb-10">
-            <time className="font-mono italic">
-              October 2021 – February 2022
-            </time>
-            <div className="text-lg font-bold font-mono">
+            <time className="italic">October 2021 – February 2022</time>
+            <div className="text-lg font-bold">
               Northcoders | Trainee Software Developer
             </div>
             <div className="text-xs pb-2">

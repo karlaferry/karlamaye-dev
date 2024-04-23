@@ -6,13 +6,10 @@ export default function About() {
       <h1 className="text-4xl py-2">hello there, friend 👋🏼</h1>
       <p className="py-2 text-l leading-8">My name is Karla.</p>
       <p className="py-2 text-l leading-8">
-        I am a{" "}
-        <span className="text-l font-bold font-mono">Full Stack Developer</span>{" "}
+        I am a <span className="text-l font-bold">Full Stack Developer</span>{" "}
         with 2+ years of commercial experience. I am based in{" "}
-        <span className="text-l font-bold font-mono">
-          Newcastle Upon Tyne, England
-        </span>
-        , and originally from the Philippines. I am a bookworm, a gamer, a
+        <span className="text-l font-bold">Newcastle Upon Tyne, England</span>,
+        and originally from the Philippines. I am a bookworm, a gamer, a
         musician, and I have two cats! 🐈‍⬛🐈‍⬛
       </p>
       <p className="py-2 text-l leading-8">
@@ -24,7 +21,7 @@ export default function About() {
       <p className="py-2 text-l leading-8">
         The coding gods must have been watching, because in 2021, I was granted
         a scholarship and joined the{" "}
-        <span className="text-l font-bold font-mono">
+        <span className="text-l font-bold">
           Northcoders Full Stack Coding Bootcamp
         </span>{" "}
         remotely. It was an intensive 13-week bootcamp that became my solid
