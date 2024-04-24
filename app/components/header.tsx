@@ -8,6 +8,7 @@ export default function Header({ children }: any) {
   const onToggle = () => {
     setIsChecked(!isChecked);
   };
+  // poke
   return (
     <>
       <div className="drawer">
@@ -17,6 +18,7 @@ export default function Header({ children }: any) {
           className="drawer-toggle"
           checked={isChecked}
           onClick={onToggle}
+          onChange={() => {}}
         />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
