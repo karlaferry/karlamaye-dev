@@ -35,7 +35,7 @@ export default function header({ children }: any) {
               {<LiaCodeSolid className="text-4xl pr-2" />} karlamaye dev
             </div>
             <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal">
+              <ul className="menu menu-horizontal md:text-xl">
                 {/* Navbar menu content here */}
                 <li>
                   <Link href="/">about</Link>
