@@ -1,5 +1,5 @@
-import About from "./components/About";
-import Avatar from "./components/Avatar";
+import About from "./components/about";
+import Avatar from "./components/avatar";
 
 export default function Home() {
   return (

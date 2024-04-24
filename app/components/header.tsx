@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { LiaCodeSolid } from "react-icons/lia";
 
-export default function Header({ children }: any) {
+export default function header({ children }: any) {
   const [isChecked, setIsChecked] = useState(false);
   const onToggle = () => {
     setIsChecked(!isChecked);
