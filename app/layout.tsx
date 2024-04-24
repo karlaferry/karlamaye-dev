@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "karlamaye.dev",
+  description: "Karla's Portfolio",
 };
 
 export default function RootLayout({
