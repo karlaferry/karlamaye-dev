@@ -5,7 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "karlamaye dev",
+  title: "karlamaye.dev",
 };
 
 export default function RootLayout({
