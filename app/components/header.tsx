@@ -5,6 +5,9 @@ import { LiaCodeSolid } from "react-icons/lia";
 
 export default function header({ children }: any) {
   const [isChecked, setIsChecked] = useState(false);
+  const onToggle = () => {
+    setIsChecked(!isChecked);
+  };
   return (
     <>
       <div className="drawer">
@@ -13,7 +16,7 @@ export default function header({ children }: any) {
           type="checkbox"
           className="drawer-toggle"
           checked={isChecked}
-          onClick={() => setIsChecked(true)}
+          onClick={onToggle}
         />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
@@ -91,7 +94,7 @@ export default function header({ children }: any) {
           </div>
           {children}
         </div>
-        <div className="drawer-side" onClick={() => setIsChecked(false)}>
+        <div className="drawer-side" onClick={onToggle}>
           <label
             htmlFor="my-drawer-3"
             aria-label="close sidebar"
