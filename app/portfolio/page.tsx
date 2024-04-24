@@ -4,7 +4,7 @@ import { portfolioItems } from "./portfolioItems";
 
 export default function Portfolio() {
   return (
-    <div className="opacity-0 animate-fade-in py-6">
+    <div className="opacity-0 animate-fade-in py-6 m-10">
       <ul className="flex gap-10 flex-row flex-wrap justify-center">
         {portfolioItems.map(
           ({ id, name, description, isVideo, media, github, livePreview }) => (

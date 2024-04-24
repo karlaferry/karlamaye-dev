@@ -32,7 +32,9 @@ export default function header({ children }: any) {
               </label>
             </div>
             <div className="flex-1 px-2 mx-2 text-xl">
-              {<LiaCodeSolid className="text-4xl pr-2" />} karlamaye dev
+              <Link href="/" className="flex items-center">
+                {<LiaCodeSolid className="text-4xl pr-2" />} karlamaye.dev
+              </Link>
             </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal md:text-xl">

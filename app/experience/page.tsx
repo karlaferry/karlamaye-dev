@@ -34,7 +34,7 @@ export default function Portfolio() {
     "Firebase",
   ];
   return (
-    <div className="opacity-0 animate-fade-in p-6 py-6 container mx-auto">
+    <div className="opacity-0 animate-fade-in p-6 py-6 container mx-auto my-10">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">
