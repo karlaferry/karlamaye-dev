@@ -1,12 +1,14 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaEye } from "react-icons/fa";
+import { LiaCodeSolid } from "react-icons/lia";
 
 interface Props {
   name: string;
   description: string;
   isVideo: boolean;
-  media: string;
+  media: string | any;
   github: string;
+  livePreview: string | any;
 }
 
 export default function Card({
@@ -15,30 +17,40 @@ export default function Card({
   isVideo,
   media,
   github,
+  livePreview,
 }: Props) {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-10/12 shadow-xl bg-base-300">
       <figure>
         {isVideo && (
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="500"
             src={media}
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         )}
+        {!isVideo && !media && (
+          <div className="py-6 my-8">
+            <LiaCodeSolid size={100} />
+          </div>
+        )}
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
         <p className="text-xs hidden md:block">{description}</p>
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-3">
           <a href={github} target="_blank">
             <FaGithub size={40} />
           </a>
+          {livePreview && (
+            <a href={livePreview} target="_blank">
+              <FaEye size={40} />
+            </a>
+          )}
         </div>
       </div>
     </div>
