@@ -3,8 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <div className="p-6 py-6 opacity-0 animate-fade-in">
-      <h1 className="text-4xl py-2">hello there, friend 👋🏼</h1>
-      <div className="lg:text-2xl">
+      <h1 className="md:text-4xl text-2xl py-2">hello there, friend 👋🏼</h1>
+      <div className="lg:text-2xl md:text-xl text-sm">
         <p className="pb-6 leading-8 lg:leading-10">My name is Karla.</p>
         <p className="pb-6 leading-8 lg:leading-10">
           I am a <span className="font-bold">Full Stack Developer</span> with 2+

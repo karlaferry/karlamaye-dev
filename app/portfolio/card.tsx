@@ -20,37 +20,32 @@ export default function Card({
   livePreview,
 }: Props) {
   return (
-    <div className="card w-10/12 shadow-xl bg-base-300">
+    <div className="card md:w-[800px] w-96 bg-base-300 shadow-xl ">
       <figure>
-        {isVideo && (
+        {isVideo ? (
           <iframe
-            width="100%"
-            height="500"
+            width="800"
+            height="400"
             src={media}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
-        )}
-        {!isVideo && !media && (
-          <div className="py-6 my-8">
-            <LiaCodeSolid size={100} />
+        ) : (
+          <div className="py-10">
+            <LiaCodeSolid size={200} />
           </div>
         )}
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
-        <p className="text-xs hidden md:block">{description}</p>
-        <div className="flex justify-end gap-3">
+        <p>{description}</p>
+        <div className="card-actions justify-end">
           <a href={github} target="_blank">
-            <FaGithub size={40} />
+            <button className="btn btn-primary">GitHub</button>
           </a>
-          {livePreview && (
-            <a href={livePreview} target="_blank">
-              <FaEye size={40} />
-            </a>
-          )}
+          {livePreview && <button className="btn btn-primary">Live</button>}
         </div>
       </div>
     </div>
