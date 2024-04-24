@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub, FaEye } from "react-icons/fa";
 import { LiaCodeSolid } from "react-icons/lia";
 
 interface Props {

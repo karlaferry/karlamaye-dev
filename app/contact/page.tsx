@@ -1,6 +1,6 @@
 import React from "react";
-import Form from "./form";
-import Socials from "./socials";
+import Form from "./Form";
+import Socials from "./Socials";
 
 export default function Contact() {
   return (
