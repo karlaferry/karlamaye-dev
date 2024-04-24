@@ -13,7 +13,7 @@ export default function Form() {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:3000/contact/thankyou"
+          value="http://karlamaye.dev/contact/thankyou"
         />
         <input
           type="text"
