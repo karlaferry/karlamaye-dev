@@ -1,12 +1,24 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { LiaCodeSolid } from "react-icons/lia";
 
 export default function header({ children }: any) {
+  const [isChecked, setIsChecked] = useState(false);
+  const onChange = () => {
+    console.log("test");
+  };
   return (
     <>
       <div className="drawer">
-        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <input
+          id="my-drawer-3"
+          type="checkbox"
+          className="drawer-toggle"
+          checked={isChecked}
+          onClick={() => setIsChecked(true)}
+          onChange={onChange}
+        />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
           <div className="w-full navbar">
@@ -83,7 +95,7 @@ export default function header({ children }: any) {
           </div>
           {children}
         </div>
-        <div className="drawer-side">
+        <div className="drawer-side" onClick={() => setIsChecked(false)}>
           <label
             htmlFor="my-drawer-3"
             aria-label="close sidebar"
