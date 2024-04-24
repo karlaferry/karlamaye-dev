@@ -64,8 +64,11 @@ export default function Portfolio() {
               conversion rates.
             </div>
             <div className="my-2">
-              {salecycleSkills.map((skill) => (
-                <span className="badge badge-outline text-xs mx-1 my-2">
+              {salecycleSkills.map((skill, ix) => (
+                <span
+                  className="badge badge-outline text-xs mx-1 my-2"
+                  key={ix}
+                >
                   {skill}
                 </span>
               ))}
@@ -106,8 +109,8 @@ export default function Portfolio() {
               personal growth opportunities.
             </div>
             <div className="my-2">
-              {mentorSkills.map((skill) => (
-                <span className="badge badge-outline text-xs mx-1">
+              {mentorSkills.map((skill, ix) => (
+                <span className="badge badge-outline text-xs mx-1" key={ix}>
                   {skill}
                 </span>
               ))}
@@ -147,8 +150,11 @@ export default function Portfolio() {
               (TDD), and honed soft skills crucial for professional growth.
             </div>
             <div className="my-2">
-              {traineeSkills.map((skill) => (
-                <span className="badge badge-outline text-xs mx-1 my-1">
+              {traineeSkills.map((skill, ix) => (
+                <span
+                  className="badge badge-outline text-xs mx-1 my-1"
+                  key={ix}
+                >
                   {skill}
                 </span>
               ))}
