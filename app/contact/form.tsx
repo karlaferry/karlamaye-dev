@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <div className="my-6">
       <form
-        action="https://formsubmit.co/karlacarreon.1994@gmail.com"
+        action="https://formsubmit.co/c956461989977a2b83cc3f13419920a7"
         method="POST"
         className="flex flex-col gap-5"
       >
