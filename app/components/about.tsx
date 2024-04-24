@@ -32,9 +32,8 @@ export default function About() {
             className="link link-hover"
             href="https://medium.com/@karlacodes/list/coding-bootcamp-series-d15a0ff713c5"
           >
-            You can read through my journey here
+            You can read through my weekly blog here.
           </a>
-          , where I blogged my experience weekly.
         </p>
       </div>
     </div>

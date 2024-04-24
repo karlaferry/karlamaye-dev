@@ -31,4 +31,23 @@ export const portfolioItems = [
     github: "https://github.com/karlaferry/Gamers-of-the-North-API",
     livePreview: null,
   },
+  {
+    id: 4,
+    name: "Transposer App",
+    description: "A little React project for transposing chords.",
+    isVideo: false,
+    media: null,
+    github: "https://github.com/karlaferry/transposer-app",
+    livePreview: "https://transposer-app.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "Business Card Generator",
+    description: "An HTML/CSS project showcasing form validation.",
+    isVideo: true,
+    media: "https://www.youtube.com/embed/dy6kzjlDnvA?si=bdXiuN9YDIwGILpC",
+    github:
+      "https://github.com/karlaferry/fe-form-validation/tree/main/generated",
+    livePreview: null,
+  },
 ];

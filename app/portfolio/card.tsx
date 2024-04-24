@@ -41,11 +41,15 @@ export default function Card({
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
         <p>{description}</p>
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end pt-4">
           <a href={github} target="_blank">
-            <button className="btn btn-primary">GitHub</button>
+            <button className="btn btn-primary hover:btn-accent">GitHub</button>
           </a>
-          {livePreview && <button className="btn btn-primary">Live</button>}
+          {livePreview && (
+            <a href={livePreview} target="_blank">
+              <button className="btn btn-primary hover:btn-accent">Live</button>
+            </a>
+          )}
         </div>
       </div>
     </div>
