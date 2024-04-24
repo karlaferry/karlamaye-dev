@@ -18,6 +18,7 @@ export default function Form() {
         <input
           type="text"
           name="name"
+          placeholder="Name (required)"
           className="input input-bordered w-full max-w-xs"
           required
         />
