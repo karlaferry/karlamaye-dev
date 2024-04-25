@@ -53,14 +53,8 @@ export default function Portfolio() {
             </svg>
           </div>
           <div className="timeline-start md:text-end mb-10">
-            <time className="italic">Feb 2024 - Present</time>
+            <time className="italic">Aug 2022 - Present</time>
             <div className="text-lg font-bold">SaleCycle | Developer</div>
-            <div className="my-4">
-              <time className="italic">Aug 2022 - Feb 2024</time>
-              <div className="text-lg font-bold">
-                SaleCycle | Junior Developer
-              </div>
-            </div>
             <div className="text-xs pb-2">
               Develops bespoke script implementations for onboarding clients,
               designed to function as web scrapers on their sites which enable
