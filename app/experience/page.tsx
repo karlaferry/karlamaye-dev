@@ -33,6 +33,7 @@ export default function Portfolio() {
     "MongoDB",
     "Firebase",
   ];
+
   return (
     <div className="opacity-0 animate-fade-in p-6 py-6 container mx-auto my-10">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -52,9 +53,13 @@ export default function Portfolio() {
             </svg>
           </div>
           <div className="timeline-start md:text-end mb-10">
-            <time className="italic">Aug 2022 - Present</time>
-            <div className="text-lg font-bold">
-              SaleCycle | Junior Developer
+            <time className="italic">Feb 2024 - Present</time>
+            <div className="text-lg font-bold">SaleCycle | Developer</div>
+            <div className="my-4">
+              <time className="italic">Aug 2022 - Feb 2024</time>
+              <div className="text-lg font-bold">
+                SaleCycle | Junior Developer
+              </div>
             </div>
             <div className="text-xs pb-2">
               Develops bespoke script implementations for onboarding clients,
@@ -63,7 +68,7 @@ export default function Portfolio() {
               targeted engagement strategies to enhance client retention and
               conversion rates.
             </div>
-            <div className="my-2">
+            <div className="mb-2">
               {salecycleSkills.map((skill, ix) => (
                 <span
                   className="badge badge-outline text-xs mx-1 my-2"
