@@ -5,16 +5,17 @@ export default function Form() {
   return (
     <div className="my-6">
       <form
-        action="https://formsubmit.co/c956461989977a2b83cc3f13419920a7"
+        action="https://submit-form.com/UlzwAPAxt"
         method="POST"
         className="flex flex-col gap-5"
       >
         <input type="hidden" name="_subject" value="You Have Mail!" />
         <input
           type="hidden"
-          name="_next"
+          name="_redirect"
           value="http://karlamaye.dev/contact/thankyou"
         />
+        <input type="hidden" name="_append" value="false" />
         <input
           type="text"
           name="name"
