@@ -3,7 +3,7 @@ export const portfolioItems = [
     id: 6,
     name: "Expenses Tracker",
     description:
-      "An Expenses Tracker project using Next.js, Tailwind CSS, and DaisyUI.",
+      "An Expenses Tracker project using Next.js, Tailwind CSS, and DaisyUI with TypeScript.",
     isVideo: false,
     media: "https://i.ibb.co/pWt2YJX/Screenshot-2024-05-05-110605.png",
     github: "https://github.com/karlaferry/expense-tracker-app",

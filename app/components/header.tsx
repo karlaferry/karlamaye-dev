@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 
-export default function header({ children }: any) {
+export default function Header({ children }: any) {
   return (
     <>
       <NavBar>{children}</NavBar>
