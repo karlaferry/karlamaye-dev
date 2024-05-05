@@ -31,6 +31,8 @@ export default function Card({
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
+        ) : media ? (
+          <img src={media} />
         ) : (
           <div className="py-10">
             <LiaCodeSolid size={200} />
