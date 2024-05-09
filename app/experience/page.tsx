@@ -56,11 +56,10 @@ export default function Portfolio() {
             <time className="italic">Aug 2022 - Present</time>
             <div className="text-lg font-bold">SaleCycle | Developer</div>
             <div className="text-xs pb-2">
-              Develops bespoke script implementations for onboarding clients,
-              designed to function as web scrapers on their sites which enable
-              the seamless execution of abandonment campaigns, facilitating
-              targeted engagement strategies to enhance client retention and
-              conversion rates.
+              Built and deployed custom web scraping scripts using JavaScript
+              and TypeScript, overcoming dynamic content challenges, to optimize
+              client onboarding and drive cart abandonment recovery for
+              SaleCycle.
             </div>
             <div className="mb-2">
               {salecycleSkills.map((skill, ix) => (
@@ -97,15 +96,10 @@ export default function Portfolio() {
               Northcoders | Junior Software Engineer & Mentor
             </div>
             <div className="text-xs pb-2">
-              Delivered comprehensive mentoring and code support to bootcamp
-              students and candidates, offering expert guidance in
-              troubleshooting, debugging, and conducting thorough code reviews.
-            </div>
-            <div className="text-xs pb-2">
-              Provided pastoral support and fostered a supportive learning
-              environment. Actively engaged in internal development initiatives,
-              facilitating exploration of new technologies and fostering
-              personal growth opportunities.
+              Mentored 50+ bootcamp students on JavaScript, React, NodeJS, and
+              agile development practices. Provided expert guidance in
+              troubleshooting, debugging, and code reviews, resulting in
+              improved code quality and project success rates.
             </div>
             <div className="my-2">
               {mentorSkills.map((skill, ix) => (
@@ -139,14 +133,11 @@ export default function Portfolio() {
               Northcoders | Trainee Software Developer
             </div>
             <div className="text-xs pb-2">
-              Successfully completed an intensive 13-week full-stack development
-              bootcamp within a dynamic and collaborative environment.
-            </div>
-            <div className="text-xs pb-2">
-              Emphasized industry-leading practices, including the
-              implementation of semantic and clean code, Continuous
-              Integration/Continuous Deployment (CI/CD), Test-Driven Development
-              (TDD), and honed soft skills crucial for professional growth.
+              Completed the intensive Northcoders full-stack development
+              bootcamp (2021-2022), building a fitness gaming app using React
+              Native, NodeJS, Firebase, and Jest for testing. Focused on
+              industry-standard practices like Test-Driven Development (TDD) and
+              agile collaboration.
             </div>
             <div className="my-2">
               {traineeSkills.map((skill, ix) => (
