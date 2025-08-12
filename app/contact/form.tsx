@@ -5,17 +5,17 @@ export default function Form() {
   return (
     <div className="my-6">
       <form
-        action="https://submit-form.com/UlzwAPAxt"
+        name="contact"
         method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/contact/thankyou"
         className="flex flex-col gap-5"
       >
-        <input type="hidden" name="_subject" value="You Have Mail!" />
-        <input
-          type="hidden"
-          name="_redirect"
-          value="http://karlamaye.dev/contact/thankyou"
-        />
-        <input type="hidden" name="_append" value="false" />
+        <input type="hidden" name="form-name" value="contact" />
+        <div className="hidden">
+          <input name="bot-field" />
+        </div>
         <input
           type="text"
           name="name"
