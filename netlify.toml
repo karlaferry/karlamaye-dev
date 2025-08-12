@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/contact-form.html"
+  to = "/contact"
+  status = 301
+
+[build]
+  publish = ".next"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NEXT_PRIVATE_TARGET = "server"
