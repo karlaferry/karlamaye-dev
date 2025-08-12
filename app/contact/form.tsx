@@ -14,7 +14,7 @@ export default function Form() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
@@ -38,21 +38,20 @@ export default function Form() {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
         className="flex flex-col gap-5"
       >
         {/* Hidden field for Netlify forms */}
         <input type="hidden" name="form-name" value="contact" />
-        
+
         {/* Honeypot field for spam protection */}
-        <p style={{ display: 'none' }}>
+        <p style={{ display: "none" }}>
           <label>
-            Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+            Don&apos;t fill this out if you&apos;re human:{" "}
+            <input name="bot-field" />
           </label>
         </p>
-        
+
         <input
           type="text"
           name="name"
@@ -76,9 +75,9 @@ export default function Form() {
           required
           disabled={isSubmitting}
         />
-        <button 
-          type="submit" 
-          className={`btn btn-primary w-20 ${isSubmitting ? 'loading' : ''}`}
+        <button
+          type="submit"
+          className={`btn btn-primary w-20 ${isSubmitting ? "loading" : ""}`}
           disabled={isSubmitting}
         >
           {isSubmitting ? (
