@@ -2,35 +2,14 @@ import React from "react";
 import { IoIosSend } from "react-icons/io";
 
 export default function Form() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
-      });
-
-      if (response.ok) {
-        window.location.href = "/contact/thankyou";
-      } else {
-        alert("There was an error submitting the form. Please try again.");
-      }
-    } catch (error) {
-      alert("There was an error submitting the form. Please try again.");
-    }
-  };
-
   return (
     <div className="my-6">
       <form
         name="contact"
         method="POST"
-        onSubmit={handleSubmit}
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/contact/thankyou"
         className="flex flex-col gap-5"
       >
         <input type="hidden" name="form-name" value="contact" />
