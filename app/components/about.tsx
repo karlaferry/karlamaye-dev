@@ -34,7 +34,7 @@ export default function About() {
             You can read through my weekly blog here.
           </a>{" "}
         </p>
-        <p>
+        <p className="pb-6 leading-8 lg:leading-10">
           Since then, I&apos;ve been on a journey of continuous learning and
           growth in the tech industry.
         </p>
