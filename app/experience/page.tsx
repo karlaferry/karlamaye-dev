@@ -4,8 +4,19 @@ export default function Portfolio() {
   const experience = [
     {
       dateRange: {
-        from: "June 2024",
+        from: "December 2024",
         to: "Present",
+      },
+      company: "BBC",
+      jobTitle: "Junior Software Engineer – Audience Portal Team",
+      description:
+        "Contributing to the BBC Audience Portal, a key platform for audience data analytics, by developing features, fixing bugs, and improving accessibility using React, NextJS, Node.js, and AWS. Collaborating across disciplines to deliver secure, performant, and user-friendly experiences of users.",
+      skills: ["AWS", "React", "Node.js", "JavaScript", "TypeScript", "Jest"],
+    },
+    {
+      dateRange: {
+        from: "June 2024",
+        to: "December 2024",
       },
       company: "Melius Cyber",
       jobTitle: "Software Developer",

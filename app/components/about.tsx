@@ -7,7 +7,7 @@ export default function About() {
       <div className="lg:text-2xl md:text-xl text-sm">
         <p className="pb-6 leading-8 lg:leading-10">My name is Karla.</p>
         <p className="pb-6 leading-8 lg:leading-10">
-          I am a <span className="font-bold">Full Stack Developer</span> with 2+
+          I am a <span className="font-bold">Software Engineer</span> with 2+
           years of commercial experience. I am based in{" "}
           <span className="font-bold">Newcastle Upon Tyne, England</span>, and
           originally from the Philippines. I am a bookworm, a gamer, a musician,
@@ -25,15 +25,18 @@ export default function About() {
           <span className="font-bold">
             Northcoders Full Stack Coding Bootcamp
           </span>{" "}
-          remotely. It was an intensive 13-week bootcamp that became my solid
-          foundation and kickstarted my career in development.{" "}
+          remotely.{" "}
           <a
             target="_blank"
             className="link link-hover"
             href="https://medium.com/@karlacodes/list/coding-bootcamp-series-d15a0ff713c5"
           >
             You can read through my weekly blog here.
-          </a>
+          </a>{" "}
+        </p>
+        <p>
+          Since then, I&apos;ve been on a journey of continuous learning and
+          growth in the tech industry.
         </p>
       </div>
     </div>
