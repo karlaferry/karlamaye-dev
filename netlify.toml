@@ -1,6 +1,5 @@
 [build]
   command = "npm run build"
-  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -11,9 +10,3 @@
 # Form settings
 [forms]
   spam_protection = true
-
-# Redirect rules for form submissions
-[[redirects]]
-  from = "/contact/thankyou"
-  to = "/contact/thankyou"
-  status = 200
